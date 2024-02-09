@@ -48,14 +48,14 @@ export const UploadDialog = () => {
 			<UploadDialogWrapper>
 				<Dialog open={open} onOpenChange={setOpen}>
 					<DialogTrigger asChild>
-						<div>Upload yours picture</div>
+						<Button variant='ghost'>Upload yours picture</Button>
 					</DialogTrigger>
 					<DialogContent>
 						<DialogHeader>
 							<DialogTitle>Upload your file</DialogTitle>
 						</DialogHeader>
 						<UploadPreview files={files} setFiles={setFiles} />
-						<UploadForm files={files} setFiles={setFiles} />
+						<UploadForm files={files} setFiles={setFiles} setOpen={setOpen} />
 						<DialogFooter className='sm:justify-start'>
 							<DialogClose asChild>
 								<Button variant='outline' className='w-full' onClick={handleCloseModal}>
@@ -73,14 +73,14 @@ export const UploadDialog = () => {
 		<UploadDialogWrapper>
 			<Drawer open={open} onOpenChange={setOpen}>
 				<DrawerTrigger asChild>
-					<div>Upload yours picture</div>
+					<Button variant='ghost'>Upload yours picture</Button>
 				</DrawerTrigger>
 				<DrawerContent>
 					<DrawerHeader className='text-left'>
 						<DrawerTitle>Upload your file</DrawerTitle>
 					</DrawerHeader>
 					<UploadPreview files={files} setFiles={setFiles} />
-					<UploadForm files={files} setFiles={setFiles} />
+					<UploadForm files={files} setFiles={setFiles} setOpen={setOpen} />
 					<DrawerFooter className='pt-2'>
 						<DrawerClose asChild>
 							<Button variant='outline' className='w-full' onClick={handleCloseModal}>

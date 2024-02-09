@@ -81,7 +81,7 @@ export const UploadInput = <TFieldValues extends FieldValues>({
 		accept: fileTypes ? generateClientDropzoneAccept(fileTypes) : undefined,
 		maxFiles,
 		multiple: maxFiles > 1,
-		disabled: files.length === maxFiles,
+		disabled,
 		validator: handleExistingFile
 	});
 
