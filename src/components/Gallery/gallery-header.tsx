@@ -38,7 +38,9 @@ export const GalleryHeader = ({ images }: GalleryHeaderProps) => {
 
 	return (
 		<div className='sticky top-0 z-10 bg-background py-3 flex flex-col items-center justify-between md:flex-row space-y-3 md:space-y-0 md:space-x-4'>
-			<UploadDialog />
+			<div className='w-full md:w-fit'>
+				<UploadDialog />
+			</div>
 			<Button
 				variant='outline'
 				className='w-full md:w-fit'

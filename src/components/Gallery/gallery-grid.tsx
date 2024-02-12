@@ -21,7 +21,7 @@ export const GalleryGrid = ({ images }: GalleryGridProps) => {
 	}
 
 	return (
-		<div className='grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-6'>
+		<div className='grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-6 min-h-screen'>
 			{images.map((image) => (
 				<div key={image.key}>
 					<Zoom>
