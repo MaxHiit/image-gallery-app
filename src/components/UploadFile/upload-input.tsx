@@ -42,7 +42,7 @@ export const UploadInput = <TFieldValues extends FieldValues>({
 	const onDrop = useCallback(
 		(acceptedFiles: FileWithPath[], rejectedFiles: FileRejection[]) => {
 			if (files.length + acceptedFiles.length > maxFiles) {
-				toast.warning(`Too many files`);
+				toast.warning('Too many files');
 				return;
 			}
 

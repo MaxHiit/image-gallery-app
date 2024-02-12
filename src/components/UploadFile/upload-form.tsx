@@ -9,6 +9,7 @@ import { useForm } from 'react-hook-form';
 import { toast } from 'sonner';
 import { generatePermittedFileTypes } from 'uploadthing/client';
 import { z } from 'zod';
+import { addImages } from '@/actions';
 import { UploadInput } from '@/components/UploadFile';
 import { Loader } from '@/components/loader';
 import { Button } from '@/components/ui/button';
@@ -57,13 +58,13 @@ export const UploadForm = ({ files, setFiles, setOpen }: UploadFormProps) => {
 			if (data.images.length > 0) {
 				toast.loading('Uploading images...');
 				const response = await startUpload(data.images);
-				// const result = response?.map((image) => ({
-				// 	id: image.key,
-				// 	name: image.key.split('_')[1] ?? image.key,
-				// 	url: image.url
-				// }));
+				const results = response?.map((image) => ({
+					key: image.key,
+					name: image.key.split('_')[1] ?? image.key,
+					url: image.url
+				}));
 
-				// 	// add server action database
+				await addImages(results);
 			}
 
 			form.reset();
