@@ -1,0 +1,11 @@
+{
+  "id": "mig_cn32qd55k8ru25flnc3g",
+  "checksum": "1:fd8daab97e35055ac574856f2d276b2dc4427f2d041e3c4089aff88b74ea8494",
+  "operations": [
+    {
+      "addTable": {
+        "table": "uploads"
+      }
+    }
+  ]
+}

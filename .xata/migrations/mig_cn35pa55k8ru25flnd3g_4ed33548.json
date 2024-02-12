@@ -1,0 +1,13 @@
+{
+  "id": "mig_cn35pa55k8ru25flnd3g",
+  "parentID": "mig_cn35p9i93rqmdghqf1p0",
+  "checksum": "1:4ed335487db9974f88d2f493a4f374c56844d78c1d3ec32f164262649fca146f",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "url",
+        "table": "uploads"
+      }
+    }
+  ]
+}

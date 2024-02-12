@@ -1,0 +1,19 @@
+{
+  "id": "mig_cn32rga93rqmdghqf1c0",
+  "parentID": "mig_cn32qd55k8ru25flnc3g",
+  "checksum": "1:bd4e06276dba91d938c587d64621d1fa63d17e76a435ff611a80a4d7c0e018d2",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "image",
+          "type": "file",
+          "file": {
+            "defaultPublicAccess": true
+          }
+        },
+        "table": "uploads"
+      }
+    }
+  ]
+}

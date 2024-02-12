@@ -1,0 +1,16 @@
+{
+  "id": "mig_cn336ed5k8ru25flnc8g",
+  "parentID": "mig_cn336cl5k8ru25flnc7g",
+  "checksum": "1:ff635a0d5d5d3a40337d4d5c2e759cf9c3da5f9722c3f8c1a8aed62ad88b2cd0",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "url",
+          "type": "text"
+        },
+        "table": "uploads"
+      }
+    }
+  ]
+}
